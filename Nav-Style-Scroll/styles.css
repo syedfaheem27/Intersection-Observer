@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 3rem;
+  height: 4rem;
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  transition: all 0.2s ease-in-out;
+}
+.navbar {
+  flex-grow: 1;
+  color: white;
+  font-size: 1.3rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar button {
+  border: 1px solid white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.navbar button:hover {
+  background: gray;
+  cursor: pointer;
+  border: none;
+}
+.hero {
+  width: 100%;
+  position: relative;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 48px -48px 64px black, inset -48px 48px 64px black;
+}
+.hero-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.height {
+  height: 200vh;
+}
+
+.invert {
+  background: gray;
+}
