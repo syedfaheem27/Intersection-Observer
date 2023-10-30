@@ -1,0 +1,41 @@
+#backdrop {
+  position: absolute;
+  inset: 0;
+  height: 400vh;
+  background-color: gray;
+  opacity: 0.2;
+}
+#overlay {
+  position: sticky;
+  z-index: 1;
+  top: 1%;
+  height: 80vh;
+  border: 8px dashed black;
+  background-color: rgba(0, 0, 255, 0.3);
+}
+section {
+  padding: 0 2rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.section-1 {
+  background: greenyellow;
+}
+.section-2 {
+  background: red;
+}
+.section-3 {
+  background: #6366f1;
+}
+.section-4 {
+  background: #fde047;
+}
+
+.invert {
+  background: black;
+  color: white;
+}
