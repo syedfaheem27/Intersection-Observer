@@ -1,0 +1,31 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#paragraphs {
+  overflow: hidden;
+  padding: 0em 1em 6em;
+}
+#paragraphs p {
+  font-size: 1.2rem;
+  margin: 1.6em 2em;
+  transform: translateX(-80%);
+  transition: transform 400ms ease-in;
+}
+
+#overlay {
+  position: fixed;
+  background-color: brown;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 20%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+#paragraphs .slide-in {
+  transform: translateX(0);
+}

@@ -1,7 +1,7 @@
 const lazyImages = document.querySelectorAll("[data-src]");
 const lazyOptions = {
   threshold: 0,
-  rootMargin: "0px 0px 1000px 0px",
+  rootMargin: "0px 0px 300px 0px",
 };
 function lazyCallback(entries, observer) {
   entries.forEach((entry) => {
