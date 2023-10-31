@@ -1,0 +1,90 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background: rgb(220, 206, 194);
+}
+.scroll-enable {
+  height: 100vh;
+}
+
+header {
+  font-size: 0.8rem;
+  background: gray;
+  color: white;
+  padding: 2em 1.2em;
+  text-align: center;
+}
+.content {
+  width: 95%;
+  padding: 0.6em 1.8em;
+  max-width: 1020px;
+  margin: 3em auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 70% auto;
+  gap: 3em;
+}
+.left {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.goat-svg {
+  display: inline-block;
+  width: 15%;
+  position: absolute;
+  background: gray;
+  opacity: 0.5;
+  border-radius: 50%;
+  left: 3%;
+  bottom: 20%;
+}
+.goat-svg img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.qoute {
+  position: absolute;
+  background: rgb(255, 255, 255, 0.7);
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  top: 20%;
+  right: -10%;
+  max-width: 30%;
+}
+.right {
+  padding: 1em 0;
+  display: flex;
+  align-items: flex-end;
+}
+.right .right-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  text-align: center;
+}
+
+@keyframes slide {
+  from {
+    transform: translateY(-70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
